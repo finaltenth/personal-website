@@ -7,15 +7,13 @@ body {
   margin:0px;
 }
 .container {
-  max-width: 1200px;
+  max-width: 80%;
   margin:0 auto;
 }
 header {
   height:400px;
-  width:100%;
   background-color: #262626;
   margin:0;
-  padding:140px;
   color:#F36E54;
 }
 footer {
@@ -26,6 +24,10 @@ footer {
   padding-top:80px;
   padding-bottom:80px;
 }
+menu {
+  padding-top:2em;
+  color:#fff;
+}
 .clear {
   clear:both;
 }
@@ -33,7 +35,7 @@ span {
   color:#fff;
 }
 h1 {
-  width:40%;
+  width:50%;
   float:left;
   font-size:46px;
   font-weight: 700;
@@ -79,7 +81,7 @@ li {
     grid-template-rows: 1fr 1fr;
     grid-auto-rows: 1fr;
     position: relative;
-    max-width:90%;
+    max-width:80%;
     margin:0 auto;
     margin-bottom: 100px
 }
@@ -95,6 +97,7 @@ li {
 	left: 0;
 	bottom: 0;
 	right: 0;
+  padding:60px;
 }
 
 .grid-div {
@@ -102,32 +105,63 @@ li {
 }
 
 #div1 {
-	background-color:#F36E54;
+
 }
 #div2 {
-	background-color: #2D87AA;
+  background-color: #F04C2F;
+
 }
 #div3 {
-	background-color: #262626;
 }
 #div4 {
-	background-color: #F36E54;
+  background-color: #BFA37A;
 }
 #div5 {
-	background-color:#262626;
+  background-color: #CB2D3D;
 }
 #div6 {
-	background-color:#2D87AA;
+	background-color: #3584A3;
+}
+#div6 .circle {
+  width:80%;
+  height:80%;
+  background-color: #FBE2D0;
+  border-radius: 300px;
+  margin:0 auto;
+  position:absolute;
+  left:10%;
+  top:10%;
 }
 #div7 {
-	background-color: #F36E54;
+
 }
 #div8 {
-	background-color:#2D87AA;
+  background-image: url(images/pattern-lines1.svg);
+  background-size: 200%;
+  background-position: center center;
 }
 #div9 {
-  background-color: #262626;
+  background-color: #F04C2F;
 }
 #div10 {
-  background-color: #F36E54;
+  background-color: #222053;
+}
+.feature {
+  height:300px;
+  margin-bottom: 4rem;
+  position: relative;
+  overflow:hidden;
+}
+.feature h1 {
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.feature-image {
+  height:500px;
+  float:right;
+  background-image: url(images/IMG_4346.jpg);
+  background-size: cover;
+  width:70%;
 }
