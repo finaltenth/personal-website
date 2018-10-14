@@ -1,0 +1,44 @@
+body {
+  background-color:#fff;
+  margin:0;
+  padding:0;
+  color:#F3C912;
+  font-family: 'Overpass Mono', monospace;
+  font-weight:100;
+}
+header {
+  height:400px;
+  width:100%;
+  background-color: #262626;
+  margin:0;
+  padding:140px;
+  color:#F36E54;
+
+}
+.clear {
+  clear:both;
+}
+h1 {
+  width:40%;
+  float:left;
+  font-size:46px;
+  font-weight: 700;
+  line-height: 48px;
+  /** font-family: 'Work Sans', sans-serif;**/
+  font-family: 'Poppins', sans-serif;
+}
+h2 {
+  font-weight:100;
+  font-family: 'Source Code Pro', monospace;
+}
+p {
+  width:60%;
+  float:left;
+  margin-bottom: 10px;
+}
+.ok {
+  height:300px;
+  width:300px;
+  display: flex;
+  justify-content: center;
+}
