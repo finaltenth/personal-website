@@ -11,14 +11,17 @@ body {
   margin:0 auto;
 }
 header {
-  height:400px;
-  background-color: #262626;
   margin:0;
   color:#F36E54;
   padding-top: 3em;
+  padding-bottom: 3em;
+
 }
 footer {
-  background-color: #fff;
+  background-image: url(images/star.svg);
+  background-size: 10%;
+  background-repeat: repeat;
+  background-position: top left;
   min-height:100px;
   color:#262626;
   padding-top:80px;
@@ -32,7 +35,7 @@ footer {
   font-size:29px;
   line-height:30px;
   font-weight:700;
-  margin:0;
+  margin:0 auto;
 }
 menu {
   padding-top:2em;
@@ -47,7 +50,7 @@ span {
   color:#fff;
 }
 h1 {
-  width:50%;
+  width:60%;
   float:left;
   font-size:46px;
   font-weight: 700;
@@ -131,6 +134,9 @@ li {
   background-repeat: no-repeat;
   background-position: center center;
 }
+#div3:hover {
+  background-size:60%;
+}
 #div4 {
   background-image: url(images/pattern-lines1.svg);
   background-size: 200%;
@@ -145,6 +151,9 @@ li {
 #div6 {
 	background-color: #F36E54;
 }
+#div6:hover {
+  background-color: #fff;
+}
 #div6 .circle {
   width:80%;
   height:80%;
@@ -155,13 +164,12 @@ li {
   left:10%;
   top:10%;
 }
+
 #div7 {
-  background-image: url(images/circles.svg);
-  background-size: contain;
+  background-image: url(images/merch.svg);
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 142% 142%;
-
 }
 #div8 {
   background-image: url(images/pattern-lines1.svg);
@@ -169,10 +177,16 @@ li {
   background-position: center center;
 }
 #div9 {
-
+  background-color: #F36E54;
 }
 #div10 {
-  background-color: #F36E54;
+
+
+  background-image: url(images/circles.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 142% 142%;
 }
 .feature {
   height:300px;
@@ -184,12 +198,16 @@ li {
   position: absolute;
   top:0;
   left:0;
+  color: #fff;
+  width:50%;
 }
 
 .feature-image {
   height:500px;
   float:right;
-  background-image: url(images/IMG_4346.jpg);
-  background-size: cover;
   width:70%;
+  background-color: #F36E54;
+  -webkit-border-top-right-radius: 100px;
+-webkit-border-bottom-right-radius: 100px;
+-moz-border-radius-topright: 100px;
 }
