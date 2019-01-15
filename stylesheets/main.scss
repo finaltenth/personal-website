@@ -1,2 +1,22 @@
 @import "modules/colours.scss";
 @import "partials/typography.scss";
+
+
+body {
+  background-color: $primary-color;
+}
+
+.container {
+  max-width: 1180px;
+  margin:0 auto;
+}
+.white {
+  color: $primary-text-color;
+}
+
+
+
+.header {
+  background-color: $primary-text-color;
+  min-height:100px;
+}
