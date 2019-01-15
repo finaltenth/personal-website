@@ -83,7 +83,6 @@ header .grid__item {
   /**grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
   grid-template-columns: [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr;
   grid-template-rows: 1fr, 1fr, 1fr;
-  background-color: #363132;
   justify-items: stretch;
   align-items: top;
 }
@@ -110,13 +109,16 @@ header .grid__item {
   grid-column: col/span 1;
   grid-row: row 1;
   background-color: #fff;
+  background-image: url(../media/IMG_4346.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .b {
   grid-column: col 2/span 1;
   grid-row: row 1;
   background-color: #202020;
-  background-image: url(../media/svg/triangles-left.svg);
+  background-image: url(../media/svg/triangles-left-black.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -135,7 +137,10 @@ header .grid__item {
 .d {
   grid-column: col 4/span 1;
   grid-row: row 1;
-  background-color: #363132;
+  background-image: url(../media/svg/triangles-left.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .e {
@@ -149,8 +154,7 @@ header .grid__item {
 .g {
   grid-column: col/span 1;
   grid-row: row 2;
-  background-color: white;
-  background-image: url(../media/svg/triangles-left.svg);
+  background-image: url(../media/svg/triangles-left-black.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -160,6 +164,9 @@ header .grid__item {
   grid-column: col 2/span 2;
   grid-row: row 2/span 2;
   background-color: brown;
+  background-image: url(../media/IMG_4346.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .i {
@@ -176,7 +183,7 @@ header .grid__item {
   grid-column: col/span 1;
   grid-row: row 3;
   background-color: #479ACC;
-  background-image: url(../media/svg/triangles.svg);
+  background-image: url(../media/svg/triangles-black.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -186,7 +193,7 @@ header .grid__item {
   grid-column: col 5/span 1;
   grid-row: row 3;
   background-color: #479ACC;
-  background-image: url(../media/svg/triangles.svg);
+  background-image: url(../media/svg/triangles-black.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -195,7 +202,7 @@ header .grid__item {
 .m {
   grid-column: col 6/span 1;
   grid-row: row 3;
-  background-color: #363132;
+  background-color: #202020;
   background-image: url(../media/svg/triangles.svg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -210,6 +217,11 @@ header .grid__item {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+footer img {
+  width: 100%;
+  margin-top: -6rem;
 }
 
 /*# sourceMappingURL=style.css.map */

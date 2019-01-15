@@ -43,7 +43,7 @@ header {
   display: grid;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr 1fr;
   grid-auto-rows: 1fr;
   justify-items: stretch;
@@ -83,7 +83,6 @@ header {
   /**grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
   grid-template-columns: [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr [col] 1fr;
   grid-template-rows: 1fr ,1fr, 1fr;
-  background-color: $off-black;
   justify-items: stretch;
   align-items: top;
   .portfolio__item {
@@ -108,12 +107,15 @@ header {
   grid-column: col / span 1;
         grid-row: row 1 ;
         background-color: $white;
+        background-image: url(../media/IMG_4346.jpg);
+        background-size: cover;
+        background-position: center center;
 }
 .b {
   grid-column: col 2 / span 1;
         grid-row: row 1 ;
         background-color: $primary-color;
-        background-image: url(../media/svg/triangles-left.svg);
+        background-image: url(../media/svg/triangles-left-black.svg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center center;
@@ -130,7 +132,10 @@ header {
     .d {
       grid-column: col 4 / span 1;
             grid-row: row 1 ;
-        background-color: $off-black;
+        background-image: url(../media/svg/triangles-left.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
     .e {
       grid-column: col 5 / span 2;
@@ -142,8 +147,7 @@ header {
     .g {
       grid-column: col  / span 1;
             grid-row: row 2 ;
-        background-color: white;
-        background-image: url(../media/svg/triangles-left.svg);
+        background-image: url(../media/svg/triangles-left-black.svg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center center;
@@ -152,6 +156,9 @@ header {
       grid-column: col 2 / span 2;
             grid-row: row 2 / span 2 ;
         background-color: brown;
+        background-image: url(../media/IMG_4346.jpg);
+        background-size: cover;
+        background-position: center center;
     }
     .i {
       grid-column: col 4 / span 1;
@@ -166,7 +173,7 @@ header {
       grid-column: col  / span 1;
             grid-row: row 3 ;
             background-color: $lovely-blue;
-            background-image: url(../media/svg/triangles.svg);
+            background-image: url(../media/svg/triangles-black.svg);
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: center center;
@@ -175,7 +182,7 @@ header {
       grid-column: col 5 / span 1;
             grid-row: row 3 ;
         background-color: $lovely-blue;
-        background-image: url(../media/svg/triangles.svg);
+        background-image: url(../media/svg/triangles-black.svg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center center;
@@ -183,7 +190,7 @@ header {
     .m {
       grid-column: col 6 / span 1;
             grid-row: row 3 ;
-        background-color: $off-black;
+        background-color: $primary-color;
         background-image: url(../media/svg/triangles.svg);
         background-size: 100%;
         background-repeat: no-repeat;
@@ -197,4 +204,10 @@ header {
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center center;
+    }
+    footer {
+      img {
+        width:100%;
+        margin-top:-6rem;
+      }
     }
