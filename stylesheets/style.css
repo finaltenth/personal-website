@@ -8,7 +8,7 @@ h1 {
   margin-top: 0;
   font-size: 3.052em;
   font-family: "Work Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.1rem;
 }
 
@@ -124,7 +124,7 @@ nav a {
 }
 
 .switch {
-  width: calc(50% - 8rem);
+  width: calc(50% - 9rem);
   margin-top: 5rem;
   margin-bottom: 5rem;
   position: relative;
@@ -143,9 +143,15 @@ nav a {
 /** Portfoilio index **/
 .portfolio-element {
   width: calc(50% - 9rem);
+  padding-top: 4rem;
+  padding-top: 4rem;
   margin-top: 2rem;
   float: left;
   background-color: #2B2B2B;
+}
+.portfolio-element p, .portfolio-element h3 {
+  padding: 0;
+  margin: 0;
 }
 
 .portfolio-element:hover {
@@ -171,9 +177,10 @@ nav a {
 @media screen and (max-width: 900px) {
   .portfolio-element, .portfolio-element:nth-child(odd), .switch {
     float: left;
-    width: calc(100% - 2rem);
+    width: calc(100% - 4rem);
     margin: 1rem;
-    margin: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .portfolio-element p, .portfolio-element h3, .portfolio-element:nth-child(odd) p, .portfolio-element:nth-child(odd) h3, .switch p, .switch h3 {
     padding-left: 2rem;
@@ -197,17 +204,8 @@ nav a {
     margin: 0;
   }
 
-  .switcher {
-    margin: 0;
-  }
-
-  .switch {
-    margin: 1rem;
-    width: calc(100% - 2rem);
-  }
-
   .box-pad {
-    padding: 0rem;
+    padding: 2rem;
   }
 }
 /** Case study page **/

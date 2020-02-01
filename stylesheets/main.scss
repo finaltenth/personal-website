@@ -78,7 +78,7 @@ nav {
 
 }
 .switch {
-  width:calc(50% - 8rem);
+  width:calc(50% - 9rem);
   margin-top:5rem;
   margin-bottom:5rem;
   position: relative;
@@ -96,9 +96,15 @@ nav {
 /** Portfoilio index **/
 .portfolio-element {
   width:calc(50% - 9rem);
+  padding-top:4rem;
+  padding-top:4rem;
   margin-top:2rem;
   float:left;
   background-color: $black;
+  p,h3 {
+    padding:0;
+    margin:0;
+  }
 }
 .portfolio-element:hover {
   background-color: $white;
@@ -122,9 +128,10 @@ nav {
 @media screen and (max-width: 900px) {
   .portfolio-element, .portfolio-element:nth-child(odd), .switch {
     float:left;
-    width:calc(100% - 2rem);
+    width:calc(100% - 4rem);
     margin: 1rem;
-    margin:1rem;
+    padding-top:4rem;
+    padding-bottom:4rem;
     p, h3 {
       padding-left:2rem;
       padding-right:2rem;
@@ -145,15 +152,10 @@ nav {
     font-size: 1.953em;
     margin:0;
   }
-  .switcher {
-    margin:0;
-  }
-  .switch {
-    margin:1rem;
-    width:calc(100% - 2rem);
-  }
+
+
   .box-pad {
-    padding:0rem;
+    padding:2rem;
   }
 }
 
