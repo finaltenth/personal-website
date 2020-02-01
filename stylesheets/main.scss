@@ -1,2 +1,37 @@
 @import "modules/colours.scss";
 @import "partials/typography.scss";
+
+body {
+  background-color: $white;
+  color: $white;
+  padding:0;
+  margin:0;
+}
+
+.header-frame {
+  margin:0 auto;
+  padding-top:4rem;
+  background-color: $background-color;
+  padding-bottom: 4rem;
+}
+section{
+  max-width:1400px;
+  margin:0 auto;
+}
+.intro {
+  width:700px;
+  margin:0 auto;
+  float:left;
+}
+.logo {
+  width:500px;
+  float:right;
+  background-color: pink;
+  img {
+    max-width: 200px;
+    float:right;
+  }
+}
+.clear {
+  clear: both;
+}
