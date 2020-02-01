@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-size: 18px;
   font-family: "Work Sans Light", sans-serif;
@@ -13,13 +14,13 @@ h1 {
   margin-top: 0;
   font-size: 3.052em;
   font-family: "Work Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   letter-spacing: -0.1rem;
 }
 
 h3 {
   font-family: "Work Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.953em;
 }
 
@@ -42,7 +43,7 @@ body {
 
 .header-frame {
   margin: 0 auto;
-  padding-top: 3rem;
+  padding-top: 2rem;
   background-color: #2B2B2B;
 }
 
@@ -55,7 +56,7 @@ section {
 nav {
   max-width: 1400px;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 /** Repeatable elements **/
@@ -82,6 +83,12 @@ nav {
   font-style: normal;
 }
 /** Styling **/
+nav a {
+  color:   #fff;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
 .intro {
   width: 60%;
   margin: 0 auto;
@@ -96,16 +103,27 @@ nav {
   max-width: 140px;
   float: right;
 }
+.logo img:hover {
+  transform: rotate(10deg);
+  transition-timing-function: ease-in-out;
+}
 
 .switcher {
   background-color: orange;
-  margin-bottom: 3rem;
 }
 
 .switch {
   width: calc(50% - 8rem);
   margin-top: 5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+.switch p {
+  font-weight: bold;
+}
+.switch p, .switch h3 {
+  padding: 0;
+  margin: 0;
 }
 
 .selected {
@@ -115,15 +133,32 @@ nav {
 
 /** Portfoilio index **/
 .portfolio-element {
-  width: calc(50% - 8rem);
-  margin-top: 3rem;
-  background-color: red;
+  width: calc(50% - 9rem);
+  margin-top: 2rem;
   float: left;
+  background-color: #2B2B2B;
+}
+.portfolio-element p {
+  font-weight: bold;
+}
+
+.portfolio-element:hover {
+  background-color: #fff;
+  color: #2B2B2B;
 }
 
 .portfolio-element:nth-child(odd) {
   float: right;
-  background-color: orange;
+}
+
+.coming-soon {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  top: -1rem;
+  right: -1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

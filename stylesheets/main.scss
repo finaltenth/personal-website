@@ -12,7 +12,7 @@ header {
 }
 .header-frame {
   margin:0 auto;
-  padding-top:3rem;
+  padding-top:2rem;
   background-color: $background-color;
 }
 section{
@@ -23,7 +23,7 @@ section{
 nav {
   max-width:1400px;
   margin:0 auto;
-  margin-bottom:5rem;
+  margin-bottom:4rem;
 }
 
 /** Repeatable elements **/
@@ -50,7 +50,13 @@ nav {
 }
 
 /** Styling **/
-
+nav {
+  a {
+    color: $white;
+    font-size:1.25em ;
+    font-weight:bold;
+  }
+}
 .intro {
   width:60%;
   margin:0 auto;
@@ -63,15 +69,27 @@ nav {
     max-width: 140px;
     float:right;
   }
+  img:hover {
+    transform: rotate(10deg);
+    transition-timing-function: ease-in-out;
+  }
 }
 .switcher {
   background-color:orange;
-  margin-bottom:3rem;
+
 }
 .switch {
   width:calc(50% - 8rem);
   margin-top:5rem;
-  margin-bottom:3rem;
+  margin-bottom:5rem;
+  position: relative;
+  p {
+    font-weight:bold;
+  }
+  p,h3 {
+    padding:0;
+    margin:0;
+  }
 }
 .selected {
   background-color:$white;
@@ -80,12 +98,28 @@ nav {
 
 /** Portfoilio index **/
 .portfolio-element {
-  width:calc(50% - 8rem);
-  margin-top:3rem;
-  background-color:red;
+  width:calc(50% - 9rem);
+  margin-top:2rem;
   float:left;
+  background-color: $background-color;
+  p {
+    font-weight:bold;
+  }
+}
+.portfolio-element:hover {
+  background-color: $white;
+  color: $background-color
 }
 .portfolio-element:nth-child(odd) {
   float:right;
-  background-color: orange;
+}
+
+.coming-soon {
+  width:70px;
+  height:70px;
+  position:absolute;
+  background-color: $white;
+  border-radius: 50%;
+  top:-1rem;
+  right:-1rem;
 }
