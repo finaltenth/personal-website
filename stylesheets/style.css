@@ -1,5 +1,6 @@
 body {
   font-size: 18px;
+  font-family: "Work Sans Light", sans-serif;
 }
 
 @font-face {
@@ -11,7 +12,15 @@ body {
 h1 {
   margin-top: 0;
   font-size: 3.052em;
-  font-family: "monument_extendedbold";
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
+}
+
+h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.953em;
 }
 
 p {
@@ -33,6 +42,7 @@ body {
 
 .header-frame {
   margin: 0 auto;
+  padding-top: 3rem;
   background-color: #2B2B2B;
 }
 
@@ -83,7 +93,7 @@ nav {
   float: right;
 }
 .logo img {
-  max-width: 200px;
+  max-width: 140px;
   float: right;
 }
 

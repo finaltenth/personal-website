@@ -7,9 +7,12 @@ body {
   padding:0;
   margin:0;
 }
+header {
 
+}
 .header-frame {
   margin:0 auto;
+  padding-top:3rem;
   background-color: $background-color;
 }
 section{
@@ -57,7 +60,7 @@ nav {
   width:40%;
   float:right;
   img {
-    max-width: 200px;
+    max-width: 140px;
     float:right;
   }
 }
