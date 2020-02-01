@@ -30,6 +30,11 @@ nav {
   ul {
     width:5rem;
     float:right;
+    color: $white;
+    li {
+      list-style-type: none;
+      text-align:right;
+    }
   }
 }
 
@@ -92,10 +97,10 @@ header {
   background-image: url(../media/svg/circle.svg);
 }
 .icon3 {
-
+  background-image: url(../media/svg/squares.svg);
 }
 .icon4 {
-  background-image: url(../media/svg/square-tri.svg);
+  background-image: url(../media/svg/curve.svg);
 }
 .icon5 {
   background-image: url(../media/svg/circle.svg);
