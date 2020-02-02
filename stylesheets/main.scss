@@ -10,9 +10,6 @@ body {
 .white {
   color: $black;
 }
-header {
-
-}
 .header-frame {
   margin:0 auto;
   padding-top:2rem;
@@ -27,8 +24,6 @@ section{
   }
 }
 nav {
-  max-width:1400px;
-  margin:0 auto;
   margin-bottom:4rem;
 }
 
@@ -42,10 +37,10 @@ nav {
 .clear {
   clear: both;
 }
-.box-pad {
-  padding:2rem 4rem 2rem 4rem;
+.max-width {
+  max-width: 1400px;
+  margin:0 auto;
 }
-
 
 /** Styling **/
 nav {
@@ -60,102 +55,20 @@ nav {
   width:60%;
   margin:0 auto;
   float:left;
+  p {
+    padding-bottom:6rem;
+  }
 }
 .logo {
   width:40%;
   float:right;
   img {
-    max-width: 140px;
+    max-width: 110px;
     float:right;
   }
   img:hover {
     transform: rotate(10deg);
     transition-timing-function: ease-in-out;
-  }
-}
-.switcher {
-  background-color:orange;
-
-}
-.switch {
-  width:calc(50% - 9rem);
-  margin-top:5rem;
-  margin-bottom:5rem;
-  position: relative;
-  color:#262626;
-  p,h3 {
-    padding:0;
-    margin:0;
-  }
-}
-.selected {
-  background-color:$white;
-  color: $black;
-}
-
-/** Portfoilio index **/
-.portfolio-element {
-  width:calc(50% - 9rem);
-  padding-top:4rem;
-  padding-top:4rem;
-  margin-top:2rem;
-  float:left;
-  background-color: $black;
-  p,h3 {
-    padding:0;
-    margin:0;
-  }
-}
-.portfolio-element:hover {
-  background-color: $white;
-  color: $black;
-}
-.portfolio-element:nth-child(odd) {
-  float:right;
-}
-
-.coming-soon {
-  width:70px;
-  height:70px;
-  position:absolute;
-  background-color: $white;
-  border-radius: 50%;
-  top:-1rem;
-  right:-1rem;
-}
-
-/** Responsive **/
-@media screen and (max-width: 900px) {
-  .portfolio-element, .portfolio-element:nth-child(odd), .switch {
-    float:left;
-    width:calc(100% - 4rem);
-    margin: 1rem;
-    padding-top:4rem;
-    padding-bottom:4rem;
-    p, h3 {
-      padding-left:2rem;
-      padding-right:2rem;
-    }
-  }
-
-  .logo {
-    float:left;
-    padding:1rem;
-    display:none;
-  }
-  .intro {
-    float:left;
-    width:calc(100% - 2rem);
-    padding:1rem;
-  }
-  h1 {
-    font-size: 1.953em;
-    margin:0;
-  }
-
-
-  .box-pad {
-    padding:2rem;
   }
 }
 
@@ -189,10 +102,71 @@ nav {
   }
 }
 
+
+
 footer {
   margin-top:6rem;
   padding-top: 4rem;
   padding-bottom:4rem;
   background-color: $black;
   color: $white;
+}
+
+
+/** Flexbox **/
+
+@media screen and (max-width: 640px) {
+
+}
+
+
+.container {
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: pink;
+  display:flex;
+}
+
+.item {
+  width: calc(50% - 5rem);
+  padding:2rem;
+  background-color:$black;
+  margin-right:1rem;
+  margin-bottom:1rem;
+  p {
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    margin-top: 0rem;
+  }
+}
+.item:hover {
+    background-color: $white;
+    color:$black;
+}
+
+
+/** Responsive **/
+@media screen and (max-width: 1100px) {
+  .intro {
+    float:left;
+    width:calc(100% - 4rem);
+    padding:1rem;
+  }
+  h1 {
+    font-size: 1.953em;
+    margin:0;
+  }
+  .item {
+    width:100%;
+    margin:1rem;
+  }
+  .logo {
+    float:left;
+    margin-bottom:2rem;
+    margin-left:1rem;
+    img {
+      float:left;
+    }
+  }
 }
