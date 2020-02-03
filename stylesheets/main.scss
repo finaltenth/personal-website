@@ -68,11 +68,9 @@ nav {
   }
   img:hover {
     transform: rotate(10deg);
-    transition-timing-function: ease-in-out;
+    transition-timing-function: cubic-bezier(0,0,1,1);
   }
 }
-
-
 /** Case study page **/
 
 .case-study-content {
@@ -102,8 +100,6 @@ nav {
   }
 }
 
-
-
 footer {
   margin-top:6rem;
   padding-top: 4rem;
@@ -112,23 +108,18 @@ footer {
   color: $white;
 }
 
-
 /** Flexbox **/
-
-@media screen and (max-width: 640px) {
-
-}
-
 
 .container {
   flex-wrap: wrap;
   flex-direction: row;
   background-color: pink;
-  display:flex;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .item {
-  width: calc(50% - 5rem);
+  /** width: calc(50% - 5rem);**/
   padding:2rem;
   background-color:$black;
   margin-right:1rem;
@@ -143,6 +134,9 @@ footer {
 .item:hover {
     background-color: $white;
     color:$black;
+}
+.item:nth-of-type(2n + 2){
+  margin-right: 0;
 }
 
 
