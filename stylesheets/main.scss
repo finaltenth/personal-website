@@ -141,20 +141,13 @@ footer {
 
 
 /** Responsive **/
-@media screen and (max-width: 1100px) {
-  .intro {
-    float:left;
-    width:calc(100% - 4rem);
-    padding:1rem;
-  }
+@media screen and (max-width: 800px) {
+
   h1 {
     font-size: 1.953em;
     margin:0;
   }
-  .item {
-    width:100%;
-    margin:1rem;
-  }
+
   .logo {
     float:left;
     margin-bottom:2rem;
