@@ -133,13 +133,16 @@ nav a {
 
 .learning {
   border-bottom: 0.2em solid #5C5C5C;
+  border-right: 0.2em solid #5C5C5C;
   width: 50%;
   margin-bottom: 4rem;
   padding-bottom: 1em;
+  margin-top: 2em;
 }
 .learning h3, .learning p {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
   padding-bottom: 0;
+  margin-top: 0;
 }
 
 /** Case study page **/
