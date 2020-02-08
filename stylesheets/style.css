@@ -12,9 +12,10 @@ h1 {
 }
 
 h3 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.953rem;
   line-height: 2.4rem;
+  letter-spacing: -0.02em;
 }
 
 h4 {
@@ -134,12 +135,15 @@ nav a {
 
 .learning {
   width: 50%;
+  border: #fff;
   margin-bottom: 4rem;
   padding-bottom: 1em;
   margin-top: 2em;
+  border: 0.1em solid;
+  padding: 1.2em 2em 1.2em 2em;
 }
 .learning h3, .learning p {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.1em;
   padding-bottom: 0;
   margin-top: 0;
 }
