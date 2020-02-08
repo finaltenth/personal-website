@@ -119,8 +119,10 @@ nav {
   padding-top:4em;
   margin-bottom: 4em;
   background-color: $black;
+  overflow:hidden;
   img {
-    text-align:center;
+    position: relative;
+    bottom:-2px;
   }
 }
 

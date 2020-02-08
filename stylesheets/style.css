@@ -18,7 +18,7 @@ h3 {
 }
 
 h4 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.25rem;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -172,9 +172,11 @@ nav a {
   padding-top: 4em;
   margin-bottom: 4em;
   background-color: #2B2B2B;
+  overflow: hidden;
 }
 .case-header img {
-  text-align: center;
+  position: relative;
+  bottom: -2px;
 }
 
 footer {
