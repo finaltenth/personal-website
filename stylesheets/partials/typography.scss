@@ -22,11 +22,11 @@ h4 {
   font-weight:500;
   font-size: 1.25rem;
   margin-top:0;
-  margin-bottom:2rem;
+  margin-bottom:1rem;
 }
 
 .larger {
-
+font-size:1.3em;
 }
 p {
   line-height:30px;
@@ -42,10 +42,11 @@ a {
 }
 
 ul {
-  padding-left:0;
-  list-style-position: inside;
+  padding-left:1em;
+  list-style-position: outside;
   margin-bottom:2em;
 }
 li {
   list-style-type: square;
+  line-height:1.5em;
 }

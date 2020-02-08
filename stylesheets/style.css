@@ -27,7 +27,11 @@ h4 {
   font-weight: 500;
   font-size: 1.25rem;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.larger {
+  font-size: 1.3em;
 }
 
 p {
@@ -46,13 +50,14 @@ a {
 }
 
 ul {
-  padding-left: 0;
-  list-style-position: inside;
+  padding-left: 1em;
+  list-style-position: outside;
   margin-bottom: 2em;
 }
 
 li {
   list-style-type: square;
+  line-height: 1.5em;
 }
 
 body {
@@ -163,7 +168,6 @@ nav a {
 .case-study-content {
   width: 60%;
   float: left;
-  margin-top: 4em;
 }
 
 .case-study-info {
@@ -171,7 +175,6 @@ nav a {
   float: right;
   background-color: #eee;
   padding: 3em;
-  margin-top: 4em;
 }
 .case-study-info ul li {
   padding-bottom: 0.2em;
@@ -226,6 +229,11 @@ footer {
 .item:hover {
   background-color: #fff;
   color: #2B2B2B;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
 
 .item:nth-of-type(2n + 2) {
