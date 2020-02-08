@@ -42,7 +42,12 @@ nav {
   max-width: 1400px;
   margin:0 auto;
 }
-
+.center {
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /** Styling **/
 nav {
   a {
@@ -79,7 +84,6 @@ nav {
 .learning {
 
   width:50%;
-  border: $white;
   margin-bottom: 4rem;
   padding-bottom:1em;
   margin-top:2em;
@@ -194,11 +198,13 @@ footer {
     padding-right:0;
     .intro {
       width:calc(100% - 2em);
-
     }
   }
   .learning {
     width:calc(100% - 2em);
+  }
+  .case-study-content {
+    width:100%;
   }
 
   h1 {

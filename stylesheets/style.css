@@ -7,8 +7,13 @@ body {
 h1 {
   margin-top: 0;
   font-size: 3.052rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Work Sans", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+h1 + p {
+  padding-bottom: 0;
 }
 
 h3 {
@@ -99,6 +104,13 @@ nav {
   margin: 0 auto;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /** Styling **/
 nav {
   padding-bottom: 2em;
@@ -135,7 +147,6 @@ nav a {
 
 .learning {
   width: 50%;
-  border: #fff;
   margin-bottom: 4rem;
   padding-bottom: 1em;
   margin-top: 2em;
@@ -256,6 +267,10 @@ footer {
 
   .learning {
     width: calc(100% - 2em);
+  }
+
+  .case-study-content {
+    width: 100%;
   }
 
   h1 {
