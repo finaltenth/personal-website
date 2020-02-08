@@ -8,6 +8,7 @@ h1 {
   margin-top: 0;
   font-size: 3.052rem;
   font-weight: 400;
+  font-family: "Work Sans", sans-serif;
 }
 
 h3 {
@@ -72,7 +73,7 @@ section {
 }
 section nav a {
   color: #fff;
-  margin-right: 1em;
+  margin-right: 2em;
 }
 
 nav {
@@ -132,8 +133,6 @@ nav a {
 }
 
 .learning {
-  border-bottom: 0.2em solid #5C5C5C;
-  border-right: 0.2em solid #5C5C5C;
   width: 50%;
   margin-bottom: 4rem;
   padding-bottom: 1em;
@@ -217,14 +216,33 @@ footer {
 }
 
 /** Responsive **/
+@media screen and (max-width: 1600px) {
+  section {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
 @media screen and (max-width: 800px) {
+  .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   .item {
-    width: 100%;
+    margin-right: 0em;
+  }
+
+  .item:nth-of-type(2n + 2) {
+    margin-right: 0em;
   }
 
   section {
     margin-left: 1em;
     margin-right: 1em;
+    padding-left: 0;
+    padding-right: 0;
   }
   section .intro {
     width: calc(100% - 2em);
