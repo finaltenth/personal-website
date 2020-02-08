@@ -192,7 +192,6 @@ footer {
 }
 
 .item {
-  /** width: calc(50% - 5em);**/
   padding: 2em;
   background-color: #2B2B2B;
   margin-right: 1em;
@@ -216,6 +215,22 @@ footer {
 
 /** Responsive **/
 @media screen and (max-width: 800px) {
+  .item {
+    width: 100%;
+  }
+
+  section {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  section .intro {
+    width: calc(100% - 2em);
+  }
+
+  .learning {
+    width: calc(100% - 2em);
+  }
+
   h1 {
     font-size: 1.953em;
     margin: 0;
@@ -224,7 +239,7 @@ footer {
   .logo {
     float: left;
     margin-bottom: 2em;
-    margin-left: 1em;
+    margin-left: 0em;
   }
   .logo img {
     float: left;
