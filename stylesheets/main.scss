@@ -164,17 +164,39 @@ footer {
 }
 .item:hover {
     background-color: $white;
-    color:$black;
+    color:$white;
     cursor: pointer;
     -webkit-transition: background-color 0.5s ease;
     -moz-transition: background-color 0.5s ease;
     -o-transition: background-color 0.5s ease;
     transition: background-color 0.5s ease;
+background-position: center;
+      background-size: cover;
 }
 .item:nth-of-type(2n + 2){
   margin-right: 0;
 }
 
+#item1.item:hover {
+  background-image: url("../media/IMG_4346.jpg");
+}
+#item2.item:hover {
+  background-image: url("../media/wish.jpg");
+}
+#item3.item:hover {
+  background-image: url("../media/wakefield.jpg");
+}
+#item4.item:hover {
+  background-image: url("../media/galway.jpg");
+}
+
+#portfolio {
+  h4 {
+    color: $black;
+    text-align: center;
+    padding-top:1rem;
+  }
+}
 
 /** Responsive **/
 @media screen and (max-width: 1600px) {
